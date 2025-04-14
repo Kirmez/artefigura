@@ -1021,7 +1021,6 @@ form .wpcf7-response-output {
 }
 /* line 20, ../scss/comun/_pages.scss */
 .post-tratamientos .imagen IMG {
-  height: 100%;
   object-fit: cover;
   width: 100%;
 }
