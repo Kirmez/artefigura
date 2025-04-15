@@ -1,14 +1,11 @@
-
-
 ul {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
-
 
 .wpcf7 .screen-reader-response {
   position: absolute;
@@ -121,10 +118,6 @@ form.submitting .wpcf7-spinner {
   animation-iteration-count: infinite;
 }
 
-.imagen {
-
-}
-
 .imagen img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -136,8 +129,17 @@ form.submitting .wpcf7-spinner {
   height: 100%;
 }
 
+.tratamientos__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.descripcion h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .photos {
-	padding: 75px 0;
+  padding: 75px 0;
 }
 
 .swiper {
@@ -147,12 +149,18 @@ form.submitting .wpcf7-spinner {
   overflow: hidden;
 }
 
+.contact__link {
+  font-size: 14px;
+  color: #7b7b7b;
+}
+
 .descripcion h5 {
-	color: #a98233;
+  color: #a98233;
 }
 
 .swiper-wrapper {
-	display: flex;
+  display: flex;
+  gap: 10px;
 }
 
 .swiper-slide {
@@ -161,58 +169,54 @@ form.submitting .wpcf7-spinner {
   align-items: center;
   gap: 10px;
   min-width: 100%;
+  width: 100%;
 }
 
 .swiper-pagination {
-	display: flex;
-	gap: 5px;
-	align-items: center;
-	justify-content: center;
-	margin-top: 20px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .swiper-pagination-bullet {
-	display: block;
-	width: 10px;
-	height: 10px;
-	border-radius: 100%;
-	background-color: #ccc;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #ccc;
 }
 
 .swiper-pagination-bullet-active {
-	background-color: #a98233;
-
+  background-color: #a98233;
 }
 
 .swiper-slide img {
-	object-fit: cover;
-	height: 100%;
-	max-height: 500px;
-	border-radius: 10px;
-	width: 100%;
+  object-fit: cover;
+  max-height: 500px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
 }
 
 @media (max-width: 1250px) {
-	.swiper-slide {
-		flex-direction: column;
-	}
+  .swiper-slide {
+    flex-direction: column;
+  }
 
-	.swiper-slide img {
-		max-height: 800px;
-	}
+  .swiper-slide img {
+    max-height: 800px;
+  }
 }
-
 
 @media (max-width: 800px) {
-	.tratamientos__container {
-		flex-direction: column;
-		padding: 0 10px;
-	}
+  .tratamientos__container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
 
-	.photos {
-		padding: 50px 10px;
-	}
+  .photos {
+    padding: 50px 10px;
+  }
 }
-
-
-
