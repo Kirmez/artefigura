@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -192,6 +196,84 @@ form.submitting .wpcf7-spinner {
   background-color: #a98233;
 }
 
+.old-price {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: #666;
+}
+
+.promo__btn {
+  background-color: #a98233;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.promo__btn:hover {
+  color: #fff;
+}
+
+.promo__wrapper {
+  background-color: #a98233;
+  box-shadow: 1px 1px 10px #333;
+  border-radius: 20px;
+}
+
+.promo__precios li,
+.promo__wrapper h2 {
+  color: #fff;
+}
+
+.promo__wrapper h2 {
+  font-size: 70px;
+}
+
+.promo__precios li {
+  font-size: 50px;
+}
+
+.promo__precios li .old-price {
+  font-size: 20px;
+}
+
+.photos__container {
+  border-radius: 10px;
+
+  border: 4px solid #a98233;
+  padding: 30px 10px;
+}
+
+
+.promo__subtitle {
+  text-align: center;
+  font-size: 45px;
+}
+
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 4px solid #a98233;
+
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.promo__container h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.banner-logo {
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
 .swiper-slide img {
   object-fit: cover;
   max-height: 500px;
@@ -210,13 +292,54 @@ form.submitting .wpcf7-spinner {
   }
 }
 
+@media (max-width: 1000px) {
+  .promo__container h1 {
+      font-size: 50px;
+  }
+
+  .promo__container, .photos__container {
+    padding: 30px;
+  }
+
+  .promo__precios li {
+    font-size: 30px;
+  }
+}
+
+
+
 @media (max-width: 800px) {
   .tratamientos__container {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+
     padding: 0 10px;
   }
 
   .photos {
     padding: 50px 10px;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .promo__precios li {
+    font-size: 21px;
+  }
+
+  .photos {
+    padding: 20px 10px;
+  }
+
+  .promo__container, .photos__container {
+    border: none;
+    padding: 0;
+  }
+
+  .promo__container h1 {
+    font-size: 30px;
+  }
+
+  .promo__subtitle {
+    font-size: 25px;
   }
 }

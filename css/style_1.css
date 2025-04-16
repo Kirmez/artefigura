@@ -346,7 +346,7 @@ header .menu .logo .logo-sticky {
 /* line 92, ../scss/comun/_header.scss */
 header .menu .logo .logo-normal {
   padding: 20px 0;
-  width: 150px;
+  max-width: 500px;
 }
 
 /* line 2, ../scss/comun/_footer.scss */

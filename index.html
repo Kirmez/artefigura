@@ -92,16 +92,7 @@
   <body
     class="tratamientos-template-default single single-tratamientos postid-25671 theme-theme-base woocommerce-no-js mega-menu-max-mega-menu-1 lifting-hifu-facial">
     <header>
-      <div class="menu">
-        <div class="logo d-none d-lg-flex justify-content-center">
-          <a href="#">
-            <img
-              class="logo-normal"
-              src="images/logo.png"
-              alt="Aret Figura logo" />
-          </a>
-        </div>
-      </div>
+      <div class="menu"></div>
     </header>
     <main role="main">
       <div
@@ -110,126 +101,264 @@
           background: url(images/banner.jpg) no-repeat center;
           background-size: cover;
         ">
-        <h2>Lifting HIFU</h2>
+        <div class="logo z-2 d-flex align-items-center justify-content-center">
+          <a href="#">
+            <img
+              class="logo-normal banner-logo"
+              src="images/logo.png"
+              alt="Aret Figura logo" />
+          </a>
+        </div>
       </div>
 
-      <div class="container post-tratamientos">
-        <div class="tratamientos__container" style="gap: 20px">
-          <div class="type-card">
-            <div class="imagen img-fluid">
-              <img
-                src="images/hifu-facial.jpg"
-                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                alt="HIFU facial"
-                decoding="async"
-                loading="lazy" />
-            </div>
+      <div class="promo pb-5">
+        <div class="container">
+          <div class="promo__container">
+            <h1 class="text-center pb-2">
+              ¡TENEMOS UNA PROMOCION ESPECIAL PARA TI!
+            </h1>
 
-            <div class="col-12 p-3">
-              <div class="descripcion">
-                <h4>Hifu Facial</h4>
+            <a href="#promo" class="promo__btn"> Contactanos Ahora! </a>
 
-                <p>
-                  El tratamiento HIFU Lifting facial es una solución avanzada
-                  antiedad para todo el rostro. Actúa reafirmando especialmente
-                  la parte inferior de la cara, mejora la textura de la piel y
-                  activa la microcirculación desde las capas más superficiales.
-                  Sus efectos son visibles desde la primera sesión, con
-                  resultados progresivos en la firmeza, luminosidad y reducción
-                  de arrugas. Tecnología innovadora: combinación de ultrasonido
-                  focalizado de alta intensidad (HIFU) y radiofrecuencia con
-                  Maya de Oro. Esta sinergia permite tensar profundamente,
-                  estimular la producción natural de colágeno y lograr que las
-                  capas internas de la piel se adhieran mejor a la musculatura
-                  facial, reduciendo la flacidez.
-                </p>
+            <div class="promo__block">
+              <div class="promo__wrapper mt-3 p-3 px-4">
+                <div class="promo__precios">
+                  <ul>
+                    <li>
+                      - Cara completa 199€ <span class="old-price">400€</span>
+                    </li>
+                    <li>
+                      - Cara + papada 239€ <span class="old-price">500€</span>
+                    </li>
+                    <li>
+                      - Cara + papada + cuello 299€
+                      <span class="old-price">549€</span>
+                    </li>
+                    <li>
+                      - HIFU Vaginal 249€
 
-                <h5>Precios:</h5>
+                      <span class="old-price"> 500€ </span> 
+                    </li>
+                    <li>
+                      - HIFU Corporal 199€ <span class="old-price">  500€</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-                <ul>
-                  <li>- Cara completa 199€ en lugar de 400€</li>
-                  <li>- Cara + papada 239€ en lugar de 500€</li>
-                  <li>- Cara + papada + cuello 299€ en lugar de 549€</li>
-                </ul>
+              <div id="promo" class=" py-5 w-100">
+                <h2 class="promo__subtitle text-center">
+                  ¡Escribenos y obtén un descuento!
+                </h2>
+
+                <form
+                  method="post"
+                  name="contact"
+                  class="wpcf7-form init mailchimp-ext-0.5.72"
+                  aria-label="Contact form"
+                  data-status="init"
+                  netlify>
+                  <div class="column one-second">
+                    <p>
+                      <span
+                        class="wpcf7-form-control-wrap"
+                        data-name="your-name"
+                        ><input
+                          size="40"
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                          aria-required="true"
+                          aria-invalid="false"
+                          placeholder="Nombre"
+                          type="text"
+                          name="name"
+                      /></span>
+                    </p>
+                  </div>
+
+                  <div class="column one-second">
+                    <p>
+                      <span
+                        class="wpcf7-form-control-wrap"
+                        data-name="your-phone"
+                        ><input
+                          class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number"
+                          aria-required="true"
+                          aria-invalid="false"
+                          placeholder="Teléfono"
+                          type="number"
+                          name="phone"
+                      /></span>
+                    </p>
+                  </div>
+
+                  <p>
+                    <input
+                      class="wpcf7-form-control wpcf7-submit has-spinner"
+                      type="submit"
+                      value="Contactar" />
+                  </p>
+                </form>
+
+                <div class="contact-list mt-4">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <a class="contact__link" href="https://wa.link/d7pllq">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="18"
+                          height="18"
+                          fill="#a98233">
+                          <path
+                            d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z"></path>
+                        </svg>
+
+                        +34684745147
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="type-card">
-            <div class="imagen img-fluid">
-              <img
-                src="images/hifu-vaginal.jpg"
-                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                alt="HIFU Vaginal"
-                decoding="async"
-                loading="lazy" />
-            </div>
+      <div class="post-tratamientos">
+        <div class="container">
+          <div class="tratamientos__container" style="gap: 20px">
+            <div class="type-card">
+              <div class="imagen img-fluid">
+                <img
+                  src="images/hifu-facial.jpg"
+                  class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                  alt="HIFU facial"
+                  decoding="async"
+                  loading="lazy" />
+              </div>
 
-            <div class="col-12 p-3">
-              <div class="descripcion">
-                <h4>Hifu Vaginal</h4>
+              <div class="col-12 p-3">
+                <div class="descripcion">
+                  <h4>Hifu Facial</h4>
 
-                <p>
-                  ¡Queridas mujeres! ¡Tenemos el gusto de compartir una
-                  excelente noticia con ustedes! En nuestro centro médico
-                  contamos ahora con un nuevo y exclusivo equipo HIFU, diseñado
-                  especialmente para el rejuvenecimiento vaginal en casos de
-                  pérdida de tono y elasticidad de las paredes vaginales.
-                  Tecnología HIFU en ginecología – Rejuvenecimiento vaginal en
-                  casos de síndrome de relajación vaginal (SRV) El síndrome de
-                  relajación vaginal (SRV) se refiere a la pérdida de tonicidad
-                  y elasticidad natural de las paredes vaginales, lo cual puede
-                  llevar al aumento del diámetro del canal vaginal. Este
-                  trastorno también puede conocerse como debilidad vaginal,
-                  síndrome de vagina amplia o atonía vaginal. Esta condición
-                  puede impactar negativamente la calidad de vida de la mujer,
-                  tanto a nivel físico como emocional.
-                </p>
+                  <p>
+                    El tratamiento HIFU Lifting facial es una solución avanzada
+                    antiedad para todo el rostro. Actúa reafirmando
+                    especialmente la parte inferior de la cara, mejora la
+                    textura de la piel y activa la microcirculación desde las
+                    capas más superficiales. Sus efectos son visibles desde la
+                    primera sesión, con resultados progresivos en la firmeza,
+                    luminosidad y reducción de arrugas. Tecnología innovadora:
+                    combinación de ultrasonido focalizado de alta intensidad
+                    (HIFU) y radiofrecuencia con Maya de Oro. Esta sinergia
+                    permite tensar profundamente, estimular la producción
+                    natural de colágeno y lograr que las capas internas de la
+                    piel se adhieran mejor a la musculatura facial, reduciendo
+                    la flacidez.
+                  </p>
 
-                <h5>Precios:</h5>
+                  <h5>Precios:</h5>
 
-                <ul>
-                  <li>- HIFU VAGINAL 249€ en lugar de 500€</li>
-                </ul>
+                  <ul>
+                    <li>
+                      - Cara completa 199€ <span class="old-price">400€</span>
+                    </li>
+                    <li>
+                      - Cara + papada 239€ <span class="old-price">500€</span>
+                    </li>
+                    <li>
+                      - Cara + papada + cuello 299€
+                      <span class="old-price">549€</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="type-card">
-            <div class="imagen img-fluid">
-              <img
-                src="images/hifu-body.jpg"
-                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                alt="HIFU Body"
-                decoding="async"
-                loading="lazy" />
+            <div class="type-card">
+              <div class="imagen img-fluid">
+                <img
+                  src="images/hifu-vaginal.jpg"
+                  class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                  alt="HIFU Vaginal"
+                  decoding="async"
+                  loading="lazy" />
+              </div>
+
+              <div class="col-12 p-3">
+                <div class="descripcion">
+                  <h4>Hifu Vaginal</h4>
+
+                  <p>
+                    ¡Queridas mujeres! ¡Tenemos el gusto de compartir una
+                    excelente noticia con ustedes! En nuestro centro médico
+                    contamos ahora con un nuevo y exclusivo equipo HIFU,
+                    diseñado especialmente para el rejuvenecimiento vaginal en
+                    casos de pérdida de tono y elasticidad de las paredes
+                    vaginales. Tecnología HIFU en ginecología – Rejuvenecimiento
+                    vaginal en casos de síndrome de relajación vaginal (SRV) El
+                    síndrome de relajación vaginal (SRV) se refiere a la pérdida
+                    de tonicidad y elasticidad natural de las paredes vaginales,
+                    lo cual puede llevar al aumento del diámetro del canal
+                    vaginal. Este trastorno también puede conocerse como
+                    debilidad vaginal, síndrome de vagina amplia o atonía
+                    vaginal. Esta condición puede impactar negativamente la
+                    calidad de vida de la mujer, tanto a nivel físico como
+                    emocional.
+                  </p>
+
+                  <h5>Precios:</h5>
+
+                  <ul>
+                    <li>
+                      - HIFU VAGINAL 249€
+
+                      <span class="old-price"> 500€ </span> 
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <div class="col-12 p-3">
-              <div class="descripcion">
-                <h4>Hifu Corporal</h4>
+            <div class="type-card">
+              <div class="imagen img-fluid">
+                <img
+                  src="images/hifu-body.jpg"
+                  class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                  alt="HIFU Body"
+                  decoding="async"
+                  loading="lazy" />
+              </div>
 
-                <p>
-                  El HIFU corporal (Ultrasonido Focalizado de Alta Intensidad)
-                  es un tratamiento estético no invasivo que utiliza ondas
-                  ultrasónicas de alta frecuencia para penetrar en las capas
-                  profundas de la piel y los tejidos subcutáneos. Su principal
-                  objetivo es reducir la grasa localizada, reafirmar la piel y
-                  mejorar notablemente la flacidez en diversas zonas del cuerpo,
-                  como el abdomen, los brazos, los muslos, la espalda y los
-                  glúteos. Este procedimiento actúa generando un efecto térmico
-                  controlado que estimula la producción de colágeno y elastina,
-                  favoreciendo una piel más firme, tersa y rejuvenecida con el
-                  paso del tiempo. Además, al actuar sobre las células grasas,
-                  el HIFU permite moldear la silueta de forma precisa sin
-                  necesidad de cirugía, tiempo de recuperación ni anestesia.
-                </p>
+              <div class="col-12 p-3">
+                <div class="descripcion">
+                  <h4>Hifu Corporal</h4>
 
-                <h5>Precios:</h5>
+                  <p>
+                    El HIFU corporal (Ultrasonido Focalizado de Alta Intensidad)
+                    es un tratamiento estético no invasivo que utiliza ondas
+                    ultrasónicas de alta frecuencia para penetrar en las capas
+                    profundas de la piel y los tejidos subcutáneos. Su principal
+                    objetivo es reducir la grasa localizada, reafirmar la piel y
+                    mejorar notablemente la flacidez en diversas zonas del
+                    cuerpo, como el abdomen, los brazos, los muslos, la espalda
+                    y los glúteos. Este procedimiento actúa generando un efecto
+                    térmico controlado que estimula la producción de colágeno y
+                    elastina, favoreciendo una piel más firme, tersa y
+                    rejuvenecida con el paso del tiempo. Además, al actuar sobre
+                    las células grasas, el HIFU permite moldear la silueta de
+                    forma precisa sin necesidad de cirugía, tiempo de
+                    recuperación ni anestesia.
+                  </p>
 
-                <ul>
-                  <li>- HIFU Corporal 249€ en lugar de 500€</li>
-                </ul>
+                  <h5>Precios:</h5>
+
+                  <ul>
+                    <li>
+                      - HIFU Corporal 199€ <span class="old-price">  500€</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -238,45 +367,43 @@
 
       <div class="photos">
         <div class="container">
-          <h2 class="text-center">Nuestros clientes</h2>
+          <div class="photos__container">
+            <h2 class="text-center">Nuestros clientes</h2>
 
-          <div class="swiper mySwiper mt-3">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="images/swiper-1.jpg" alt="photo" />
+            <div class="swiper mySwiper mt-3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/swiper-1.jpg" alt="photo" />
 
-                <img src="images/swiper-2.jpg" alt="photo" />
+                  <img src="images/swiper-2.jpg" alt="photo" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="images/swiper-3.jpg" alt="photo" />
+
+                  <img src="images/swiper-4.jpg" alt="photo" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="images/swiper-5.jpg" alt="photo" />
+
+                  <img src="images/swiper-6.jpg" alt="photo" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="images/swiper-11.jpg" alt="photo" />
+
+                  <img src="images/swiper-8.jpg" alt="photo" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="images/swiper-9.jpg" alt="photo" />
+
+                  <img src="images/swiper-10.jpg" alt="photo" />
+                </div>
               </div>
-
-              <div class="swiper-slide">
-                <img src="images/swiper-3.jpg" alt="photo" />
-
-                <img src="images/swiper-4.jpg" alt="photo" />
-              </div>
-
-              <div class="swiper-slide">
-                <img src="images/swiper-5.jpg" alt="photo" />
-
-                <img src="images/swiper-6.jpg" alt="photo" />
-              </div>
-
-              <div class="swiper-slide">
-                <img src="images/swiper-7.jpg" alt="photo" />
-
-                <img src="images/swiper-8.jpg" alt="photo" />
-              </div>
-
-              <div class="swiper-slide">
-                <img src="images/swiper-9.jpg" alt="photo" />
-
-                <img src="images/swiper-10.jpg" alt="photo" />
-              </div>
-
-              <div class="swiper-slide">
-                <img src="images/swiper-11.jpg" alt="photo" />
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -291,13 +418,9 @@
           <div
             class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-4 py-5">
-              <h2 class="text-center text-md-left">
-                ¡Escribenos y obtén un descuento!
-              </h2>
-
-              <h4 class="text-center text-md-left mt-3">
+              <h3 class="text-center text-md-left mt-3">
                 Contacta con nosotras
-              </h4>
+              </h3>
 
               <div
                 class="wpcf7 no-js"
